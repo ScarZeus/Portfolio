@@ -9,9 +9,15 @@
       justify-content: space-between;
       align-items: center;
 }
+.image{
+  height: auto;
+  width: 500px;
+  position: relative;
+  display: inline-block;
+}
 
 .text{
-  background: linear-gradient(to right, white 45%, black 50%);
+  background: linear-gradient(to right, white 49%, black 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px;
