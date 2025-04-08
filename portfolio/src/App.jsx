@@ -1,22 +1,34 @@
-import './App.css'
-import About from './component/about-me-component/About'
-import Footer from './component/footer-Component/Footer'
-import Header from './component/header-Component/Header'
-import Home from './component/home-component/Home'
-
+import React, { useState, useEffect } from "react";
+import Portfolio from "./component/Porfolio/index";
+import "./App.css";
 function App() {
-  return (
-    <div className='App'>
-      <div className='App-bar'>
-        <Header />
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (document.readyState === "complete") {
+      setLoading(false);
+      return;
+    }
+
+    const handleLoad = () => {
+      setLoading(false);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="preloader">
+        <div className="spinner"></div>
+        <h2>Loading...</h2>
       </div>
-    <Home />
-    <About />
-      <div className='Foot-bar'>
-        <Footer />
-      </div>
-    </div>
-  )
+    );
+  }
+
+  return <Portfolio />;
 }
 
-export default App
+export default App;
