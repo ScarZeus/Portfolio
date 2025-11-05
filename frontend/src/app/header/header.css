@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     background: black;
     color: white;
     position: sticky;
@@ -17,7 +17,7 @@
 
 #header-name {
     font-family: 'Black Ops One', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     margin: 0;
@@ -45,11 +45,12 @@
 #nav-section-list li a {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5rem;
     letter-spacing: 0.15rem;
     color: white;
     text-decoration: none;
     transition: opacity 0.3s ease;
+    flex-shrink: 0;
 }
 
 
