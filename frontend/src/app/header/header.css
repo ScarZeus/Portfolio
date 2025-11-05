@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: sticky;
+    top:0;
+    background-color: black ;
+    z-index:100;
+}
