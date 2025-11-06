@@ -1,4 +1,6 @@
-.hero-section{
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+
+.hero-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,8 +8,8 @@
     gap: 29rem;
 }
 
-.hero-text-container{
+.hero-text-container {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
