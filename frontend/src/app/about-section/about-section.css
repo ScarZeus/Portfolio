@@ -1,0 +1,55 @@
+.about-section {
+    background-color: black;
+    color: white;
+    padding: 4rem 6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    align-items: center;           
+}
+
+#about-description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+#about-headline {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    transition: all 0.4s ease;
+}
+
+#about-headline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 4px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #0077ff, #00eaff);
+    transform: translateX(-50%);
+    transition: width 0.6s ease-out;
+}
+
+#about-headline:hover::after {
+    width: 100%;
+}
+
+#about-headline.active {
+    background: linear-gradient(90deg, #0077ff, #00eaff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#about-headline.active::after {
+    width: 100%;
+}
