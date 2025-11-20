@@ -35,7 +35,6 @@
     animation: nerveFlow 6s ease-in-out infinite;
 }
 
-/* glowing nerve animation */
 @keyframes nerveFlow {
     0% {
         transform: translateX(-10%) translateY(-10%) scale(1.1);
