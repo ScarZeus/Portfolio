@@ -4,33 +4,17 @@
         <p id="about-description">
             {{ aboutDescription }}
         </p>
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="line"></div>
-                <div class="card">
-                    <h3>Experience 1</h3>
-                    <p>Software Developer — 2022</p>
+        <div class="journey">
+            <h2 id="journey-text">My Journey so far</h2>
+            <div class="experience-cards" *ngFor="let experience of experiences ; let i=index">
+                <div class="experience-card">
+                    <h3 class="experience-role">{{ experience.role }}</h3>
+                <h4 class="experience-company">{{ experience.company }}</h4>
+                <p class="experience-duration">{{ experience.startYear }} - {{ experience.endYear }}</p>
+                <p class="experience-description">{{ experience.description }}</p>
                 </div>
+                <hr *ngIf="i !== experiences.length - 1" class="experience-line">
             </div>
-
-            <div class="timeline-item">
-                <div class="line"></div>
-                <div class="card">
-                    <h3>Education 1</h3>
-                    <p>B.Tech — 2019–2023</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="line"></div>
-                <div class="card">
-                    <h3>Experience 2</h3>
-                    <p>Intern — 2021</p>
-                </div>
-            </div>
-
         </div>
-
     </div>
 </section>
