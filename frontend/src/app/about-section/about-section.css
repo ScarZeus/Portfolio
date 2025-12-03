@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -163,14 +162,11 @@
 }
 
 
-
-
 .experience-card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 0 25px rgba(0, 234, 255, 0.4);
 }
 
-/* ROLE — main title */
 .experience-role {
   margin: 0;
   font-size: 1.35rem;
@@ -181,7 +177,6 @@
   line-height: 1.2;
 }
 
-/* COMPANY — modern gradient text */
 .experience-company {
   margin: 4px 0 0;
   font-size: 1rem;
@@ -193,7 +188,6 @@
   letter-spacing: 0.3px;
 }
 
-/* DURATION — soft glowing pill style */
 .experience-duration {
   margin: 10px auto 0;
   display: inline-block;
@@ -210,7 +204,6 @@
               0 0 8px rgba(0, 212, 255, 0.15);
 }
 
-/* DESCRIPTION — clean body text */
 .experience-description {
   margin-top: 12px;
   font-size: 0.97rem;
