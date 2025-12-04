@@ -1,0 +1,22 @@
+#star-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -2;         /* below floating icons */
+  background: black;
+}
+
+.floating-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.float-item {
+  position: absolute;
+  width: 70px;
+  opacity: 0.27;
+  animation: drift 22s linear infinite, wobble 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.35));
+}
