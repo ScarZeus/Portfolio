@@ -9,5 +9,13 @@ import { ProjectsModel } from '../models/projects-model';
   styleUrl: './projects-section.css',
 })
 export class ProjectsSection {
-    projectsList: ProjectsModel[] = [];
+    projectsList: ProjectsModel[] = [
+        {
+          title: 'Portfolio Website',
+          description: 'A personal portfolio website showcasing my skills and projects.',
+          imageRef: 'assets/images/portfolio.png',
+          githubLink: '',
+          id: 0
+        }
+    ];
 }
