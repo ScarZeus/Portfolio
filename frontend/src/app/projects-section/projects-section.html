@@ -3,7 +3,7 @@
         <h2 id="projects-header">My Projects</h2>
         <div class="project-cards-list">
             <div class="project-card" *ngFor="let project of projectsList">
-                <iframe [src]="project.imageRef"class="project-image"></iframe>
+                <img [src]="project.imageRef" alt="{{ project.title }} screenshot" class="project-image">
                 <h3 class="project-title">{{ project.title }}</h3>
                 <p class="project-description">{{ project.description }}</p>
                 <a [href]="project.githubLink" target="_blank" class="project-link">View Project</a>
