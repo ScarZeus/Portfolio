@@ -53,3 +53,10 @@
 
   animation: techGlow 2.5s ease-in-out infinite alternate;
 }
+
+.project-cards-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}

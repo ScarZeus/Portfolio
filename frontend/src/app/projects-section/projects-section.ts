@@ -16,6 +16,13 @@ export class ProjectsSection {
           imageRef: 'assets/images/portfolio.png',
           githubLink: '',
           id: 0
+        },
+        {
+          title: 'Portfolio Website',
+          description: 'A personal portfolio website showcasing my skills and projects.',
+          imageRef: 'assets/images/portfolio.png',
+          githubLink: '',
+          id: 2
         }
     ];
 }
