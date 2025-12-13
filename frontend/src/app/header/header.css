@@ -66,6 +66,11 @@
 }
 
 
+.menu-container{
+    display: hidden;
+}
+
+
 #nav-section-list li a {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
@@ -87,6 +92,16 @@
     opacity: 0.7;
 }
 
-@media  (min-width: 600px) {
-    
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-section-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
 }
