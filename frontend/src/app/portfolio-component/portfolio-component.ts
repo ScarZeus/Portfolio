@@ -5,6 +5,7 @@ import { AboutSection } from '../about-section/about-section';
 import { SkillsSection } from '../skills-section/skills-section';
 import { AmongusBackground } from '../amongus-background/amongus-background';
 import { ProjectsSection } from '../projects-section/projects-section';
+import { FullscreenService } from '../services/full-screen-service';
 
 @Component({
   selector: 'app-portfolio-component',
@@ -13,5 +14,9 @@ import { ProjectsSection } from '../projects-section/projects-section';
   styleUrl: './portfolio-component.css',
 })
 export class PortfolioComponent {
-
+    fullScreenService : FullscreenService;
+    constructor(fullScreenService: FullscreenService){
+        this.fullScreenService = fullScreenService;
+    }
+    
 }
