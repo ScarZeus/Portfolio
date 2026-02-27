@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio using React
+Portfolio using Angular
